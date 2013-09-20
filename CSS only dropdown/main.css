@@ -1,0 +1,102 @@
+body {
+	font-size: 14px;
+	margin: 0;
+}
+
+header ul {
+	list-style-type: none;
+	overflow: hidden;
+	text-align: left;
+	padding: 0;
+	margin: 0;
+	position: relative;
+	max-height: 0;
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    -o-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+    transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+}
+
+#open:checked ~ ul {
+    -moz-transition-duration: 0.3s;
+    -webkit-transition-duration: 0.3s;
+    -o-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -moz-transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+    -o-transition-timing-function: ease-in;
+    transition-timing-function: ease-in;
+    max-height: 1000px;
+}
+
+input[type=checkbox] {
+	opacity: 0;
+}
+
+.menuClear {
+	border-bottom: 1px solid #e8e8e8;
+	clear: both;
+}
+
+header ul li a {
+	border-bottom: 1px solid #e8e8e8;
+	display: block;
+	font-size: 1.3em;
+	padding: 1.3em;
+	color: #00aeef;
+	height: 23px;
+	text-decoration: none;
+}
+
+header ul li a:after {
+	content: '';
+	background: url(../img/mobile-sprite.png) -4px -131px no-repeat transparent;
+	display: block;
+	width: 26px;
+	height: 26px;
+	float: right;
+	overflow: hidden;
+}
+
+header ul li a.login:after {
+	background-position: 3px -63px;
+}
+
+
+header ul li a.search:after {
+	background-position: -1px -95px;
+}
+
+.logo {
+	background: url(../img/mobile-sprite.png) 0px 0px no-repeat transparent;
+	width: 118px;
+	margin: 1.7em 0 1.7em 1.3em;
+	float: left;
+	display: block;
+	height: 24px;
+}
+
+.labelOpen {
+	background: url(../img/mobile-sprite.png) 0px -34px no-repeat transparent;
+	width: 24px;
+	margin: 1.7em 1.3em 1.7em 0;
+	float: right;
+	display: block;
+	height: 24px;
+}
+
+#menu a.menu-button {
+	background: url(../img/mobile-sprite.png) 0px -33px no-repeat transparent;
+	width: 22px;
+	display: block;
+	height: 23px;
+	margin: 1.7em 1.3em 1.7em 0;
+	float: right;
+	text-indent: -5000px;
+}
+
+
